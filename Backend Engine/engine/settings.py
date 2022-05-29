@@ -79,27 +79,27 @@ WSGI_APPLICATION = 'engine.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'movies',
-        'USER': 'postgres',
-        'PASSWORD': 'dikshant04',
-        'HOST': 'localhost',
-        'PORT': '5432',
-    }
-}
-
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'dfatb9t227504r',
-#         'USER': 'bddibtlpejniij',
-#         'PASSWORD': 'a5a3dfcd165e19aae0cfa15483ebb0ad36bcfde354441731c60540ffb52420ce',
-#         'HOST': 'ec2-34-227-120-79.compute-1.amazonaws.com',
+#         'NAME': 'movies',
+#         'USER': 'postgres',
+#         'PASSWORD': 'dikshant04',
+#         'HOST': 'localhost',
 #         'PORT': '5432',
 #     }
 # }
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'dfatb9t227504r',
+        'USER': 'bddibtlpejniij',
+        'PASSWORD': 'a5a3dfcd165e19aae0cfa15483ebb0ad36bcfde354441731c60540ffb52420ce',
+        'HOST': 'ec2-34-227-120-79.compute-1.amazonaws.com',
+        'PORT': '5432',
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators

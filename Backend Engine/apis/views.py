@@ -31,8 +31,9 @@ def loadCsv(request):
       MoviesHistory.objects.create(
         movie = obj
       )
-      i += 1  
-
+    i += 1  
+    print(i)
+  print("movies done")
   movies = pd.read_csv('apis/movies.csv')
   credits = pd.read_csv('apis/credits.csv')
 
@@ -54,7 +55,7 @@ def loadCsv(request):
   movies['overview'] = movies['overview'].apply(lambda x:x.split())
   movies['tags'] = movies['overview'] + movies['genres'] + movies['keywords'] + movies['cast'] + movies['crew']
 
-
+  print('tstem')
   ps = PorterStemmer()
   def stem(text):
     y = []
@@ -65,7 +66,7 @@ def loadCsv(request):
   new_df = movies.drop(columns=['overview','genres','keywords','cast','crew'])
   new_df['tags'] = new_df['tags'].apply(lambda x: " ".join(x))
   new_df['tags'] = new_df['tags'].apply(stem)
-
+  i = 0
   for _ , row in new_df.iterrows():
     # insert data
     MovieRecommendationTagsTable.objects.create(
@@ -73,6 +74,8 @@ def loadCsv(request):
       title = row['title'],
       tags = row['tags']
     )
+    print(i+1)
+    i += 1
 
   return HttpResponse("done preprocessing the data")
 
