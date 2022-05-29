@@ -2,7 +2,7 @@
   "name": "netflix-clone",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://azazel5.github.io/NetflixClone/",
+  "homepage": "https://diksh04.github.io/MS_Engage-2022/",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "cypress": "^4.12.1",
-    "gh-pages": "^3.1.0",
+    "gh-pages": "^3.2.3",
     "typescript": "3.8.3"
   },
   "scripts": {
