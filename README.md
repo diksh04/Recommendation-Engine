@@ -1,5 +1,5 @@
 <h3>Recommendation Engine🎬</h3>
-<p>This is the project that I made during my Microsoft Engage program  based on the TMDB movie dataset using the KNN algorithm and content-based filtering. Integrated the recommendation engine with the existing Netflix platform, ensuring seamless user experience and improved engagement.Enhanced the speed of the server's response while streamlining backend operations to handle greater user traffic without degrading the user experience.</p>
+<p>This is the project that I made during my Microsoft Engage program  based on the TMDB movie dataset using the KNN algorithm and content-based filtering. Integrated the recommendation engine with the existing Netflix platform, ensuring seamless user experience and improved engagement.Enhanced the speed of the server's response while streamlining backend operations to handle greater user traffic without degrading the user experience. </p>
 
 Skills Used: ReactJs, Python, Django, PostgreSQL
 
